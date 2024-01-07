@@ -14,25 +14,25 @@ advanced features.
 2. Modify the configuration section of the script to point to the
    files to be backed up and the backup destination.
 
-# Modify the configuration section of the script to point to the
-  rclone binary.
+3. Modify the configuration section of the script to point to the
+   rclone binary.
 
 ## Performing a backup
 
 To backup the configured files, run:
 
-   powershell rclone-backup-script.ps1 backup
+    powershell rclone-backup-script.ps1 backup
 
 If PowerShell scripts are disabled on your system, you will need to use:
 
-   powershell -ExecutionPolicy Unrestricted rclone-backup-script.ps1 backup
+    powershell -ExecutionPolicy Unrestricted rclone-backup-script.ps1 backup
 
 ## Checking an existing backup
 
 To verify that the files in the backup match those found in the backup
 source, run:
 
-   powershell rclone-backup-script.ps1 check
+    powershell rclone-backup-script.ps1 check
 
 # Alternatives
 
